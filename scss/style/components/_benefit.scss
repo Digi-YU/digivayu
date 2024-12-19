@@ -84,3 +84,15 @@
     box-shadow: 18px 18px 100px 0 $primary_shadow;
     border-radius: 1.5rem;
 }
+
+.process_icons{
+    width: 4.6875rem;
+    height: 4.6875rem;
+    border: 1px solid #ececec;
+    border-radius: 1.5rem;
+    box-shadow: 4px 4px 20px 0 $primary_shadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
