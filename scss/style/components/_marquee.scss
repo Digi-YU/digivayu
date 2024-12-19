@@ -1,0 +1,30 @@
+.marquee {
+    position: relative;
+    overflow: hidden;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    background: #f8f9fa;
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    will-change: transform;
+
+    .image {
+        flex-shrink: 0;
+        img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: filter 0.3s ease, opacity 0.3s ease;
+            will-change: transform;
+
+            &:hover {
+                filter: grayscale(0%);
+                opacity: 1;
+            }
+        }
+    }
+} 
+

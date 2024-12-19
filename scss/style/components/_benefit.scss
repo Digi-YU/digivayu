@@ -1,0 +1,86 @@
+.benefit-content{
+    .benefit-item{
+        
+        gap: 1.25rem;
+        .box_icon{
+           width: 3.5rem;
+           height: 3.5rem;
+           border-radius: 25%;
+           border: .0625rem solid $small_border;
+           border-radius: 1.25rem;
+           background-color: #fff;
+        .image{
+            width: 1.75rem;
+        }
+        }
+        .content{
+            p{
+                font-size: 1rem;
+                color: $secondary;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.image_container{
+    position: relative;
+    .image_tick_container{
+        z-index: 10;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    width: 170px;
+    top: 50%;
+    right: -2rem;
+        height: fit-content;
+       
+        backdrop-filter: blur(50px);
+        border: .0625rem solid rgba(255, 255, 255, .5);
+        position: absolute;
+       
+    .image_tick{
+        width:3.125rem;
+        aspect-ratio: 1/1;
+    }
+    .image_tick_text{
+        width: fit-content;
+        text-align: center;
+        line-height: 1;
+        .text-32{
+            font-size: 2rem;
+        }
+            .text-16{
+                font-size: 1rem;
+                @include primary-gradient-text;
+            }
+        
+    }
+}
+
+.model_image{
+   
+   
+    border: .3125rem solid $white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, .3), 18px 18px 100px 0 $primary_shadow;
+}
+.image_overlay{
+    position: absolute;
+    top: 50%;
+    left:  -50% ;
+
+    transform: translate(25%, 0%);
+    box-shadow: 18px 18px 100px 0 $primary_shadow;
+    border-radius: 1.5rem;
+
+}
+}
+.image_overlay_2{
+    position: absolute;
+    top: 50%;
+    left:  50% ;
+
+    transform: translate(25%, 0%);
+    box-shadow: 18px 18px 100px 0 $primary_shadow;
+    border-radius: 1.5rem;
+}

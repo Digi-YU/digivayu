@@ -1,0 +1,30 @@
+.growth_container{
+    width: 100%;
+    margin-bottom: 2.25rem;
+    padding: 4.625rem 3.625rem;
+    border-radius: 1.25rem;
+   border: 1px solid $small_border;
+}
+.growth_list{
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+    li{
+        font-size: 0.875rem;
+        font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        .image{
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}
+.apply_btn{
+ width: 100%;
+
+}

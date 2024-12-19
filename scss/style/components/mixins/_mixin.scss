@@ -1,0 +1,13 @@
+@mixin primary-gradient-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    inline-size: fit-content;
+    background-image: $primary_gradient;
+}
+@mixin primary-gradient-button {
+    background-image: $primary_gradient;
+    color: #fff;
+    border: none;
+
+}

@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+body{
+   overflow-x: hidden;
+   font-family: $font-family-body;
+}
+
+
+
+
+.font-display{
+    font-family: $font-family-display !important;
+}
+
+.font-body{
+    font-family: $font-family-body;
+}
+
+
+
+@mixin flex($direction: row, $justify: flex-start, $align: stretch, $wrap: nowrap, $gap: 0) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+main{
+   padding: 0 1rem;
+}
+.chart{
+    border: .0615rem solid $small_border;
+    border-radius: 1.25rem;
+}
+
+hgroup{
+  
+    h1{
+       span{
+    @include primary-gradient-text;
+       }
+    
+    }
+    h2{
+        span{
+            @include primary-gradient-text;
+        }
+    }
+    p{
+        font-size: 1rem;
+        font-weight: 400;
+        width: 90%;
+       }
+    h4{
+        letter-spacing: 0.1rem;
+        @include primary-gradient-text;
+
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+  
+}
+h5{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+span{
+    @include primary-gradient-text;
+}
+}
+.display-7{
+    font-size: 1.875rem;
+    font-weight: 600;
+}

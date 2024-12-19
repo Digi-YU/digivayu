@@ -1,0 +1,26 @@
+
+
+@import 'style/partials/reset';
+
+
+// Import utils
+@import 'style/utils/color';
+@import 'style/utils/fonts';
+@import 'style/components/mixins/mixin';
+
+// Import partials
+
+@import 'style/partials/common';
+
+
+// Import components
+@import 'style/components/navbar';
+@import 'style/components/header';
+@import 'style/components/button';
+@import 'style/components/benefit';
+@import 'style/components/growth';
+
+@import 'style/responsive/mobile';
+@import 'style/responsive/tablet';
+
+
