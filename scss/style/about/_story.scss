@@ -5,6 +5,7 @@
     box-shadow: 4px 4px 36px 0 $primary_shadow;
   
     .story_box_content{
+        
         h3{
             font-size: calc(1rem + .5vw);
             strong{
@@ -23,3 +24,8 @@
      }
     }
 }
+
+.our-core-values_box{
+height: 100%;
+}
+

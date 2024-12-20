@@ -21,16 +21,16 @@ animation.to(marquee, {
 });
 
 // Add hover pause effect
-marquee.addEventListener('mouseenter', () => {
-    gsap.to(animation, {
-        timeScale: 0,
-        duration: 0.5
-    });
-});
+// marquee.addEventListener('mouseenter', () => {
+//     gsap.to(animation, {
+//         timeScale: 0,
+//         duration: 0.5
+//     });
+// });
 
-marquee.addEventListener('mouseleave', () => {
-    gsap.to(animation, {
-        timeScale: 1,
-        duration: 0.5
-    });
-});
+// marquee.addEventListener('mouseleave', () => {
+//     gsap.to(animation, {
+//         timeScale: 1,
+//         duration: 0.5
+//     });
+// });

@@ -1,0 +1,77 @@
+.contact-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+    padding: 1rem;
+    background-color: black;
+
+    .contact-form {
+        background: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        width: 90%;
+        max-width: 500px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+        .form-header {
+            .close-btn {
+                background: none;
+                border: none;
+                font-size: 1.5rem;
+                color: #666;
+                cursor: pointer;
+                padding: 0.5rem;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    color: $primary;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
+        .form-group {
+            label {
+                font-weight: 500;
+                margin-bottom: 0.5rem;
+                color: #333;
+            }
+
+            .form-control {
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 0.5rem;
+                padding: 0.75rem 1rem;
+                transition: all 0.3s ease;
+
+                &:focus {
+                    border-color: $primary;
+                    box-shadow: 0 0 0 3px rgba(255, 92, 229, 0.1);
+                }
+            }
+
+            textarea {
+                resize: vertical;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-overlay {
+        align-items: flex-end;
+        padding: 0;
+
+        .contact-form {
+            border-radius: 1rem 1rem 0 0;
+            padding: 1.5rem;
+        }
+    }
+} 

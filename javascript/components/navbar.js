@@ -1,3 +1,5 @@
+import ContactForm from './contact.js';
+
 class Navbar {
     constructor() {
         // Get current page path
@@ -43,6 +45,7 @@ class Navbar {
             </div>
             </div>
         `;
+        this.contactForm = new ContactForm();
     }
 
     isActive(...pages) {
@@ -54,6 +57,7 @@ class Navbar {
         if (container) {
             container.innerHTML = this.template;
             this.initMobileMenu();
+            this.initContactForm();
         }
     }
 
@@ -98,6 +102,19 @@ class Navbar {
             } else {
                 menuTl.reverse();
             }
+        });
+    }
+
+    initContactForm() {
+        this.contactForm.init();
+        
+        // Add click handlers for both desktop and mobile CTA buttons
+        const ctaButtons = document.querySelectorAll('.btn-black');
+        ctaButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.contactForm.show();
+            });
         });
     }
 }

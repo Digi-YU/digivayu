@@ -30,6 +30,11 @@ width: 100%;
 
   
 }
+.header-content{
+    h1{
+        text-transform: capitalize;
+    }
+}
 .marquee_animation{
     /* Overlay+Border+OverlayBlur */
     height: 15%;
