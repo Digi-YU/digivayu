@@ -9,7 +9,7 @@ class Navbar {
             <div class="navbar">
             <div class="container navbar-container">
                 <div class="logo">
-                    <a href="/">
+                    <a href="index.html">
                         <img src="assets/image/png/logo.png" alt="DigiVayu">
                     </a>
                 </div>
