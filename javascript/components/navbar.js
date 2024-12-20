@@ -19,7 +19,7 @@ class Navbar {
                         <li><a href="index.html#services" class="${this.isActive('services.html')}">Services</a></li>
                         <li><a href="about.html" class="${this.isActive('about.html')}">About Us</a></li>
                         
-                        <li><a href="#" class="${this.isActive('contact.html')}">Contact</a></li>
+                        <li><a href="contact.html" class="${this.isActive('contact.html')}">Contact</a></li>
                     </ul>
                     <div>
                         <a href="#" class="btn-black">Book a Discovery Call&nbsp; <span>👉</span></a>
@@ -37,7 +37,7 @@ class Navbar {
                     <li><a href="index.html" class="${this.isActive('index.html', '')}">Home</a></li>
                     <li><a href="index.html#services" class="${this.isActive('services.html')}">Services</a></li>
                     <li><a href="about.html" class="${this.isActive('about.html')}">About</a></li>
-                        <li><a href="#" class="${this.isActive('contact.html')}">Contact</a></li>
+                    <li><a href="contact.html" class="${this.isActive('contact.html')}">Contact</a></li>
                 </ul>
                 <div class="mobile-cta">
                     <a href="#" class="btn-black">Book a Discovery Call&nbsp; <span class="d-none d-sm-inline">👉</span></a>
