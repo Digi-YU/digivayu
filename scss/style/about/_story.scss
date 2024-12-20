@@ -1,0 +1,25 @@
+.story_box{
+    border: 1px solid $small_border;
+    border-radius: 1.25rem;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 4px 4px 36px 0 $primary_shadow;
+  
+    .story_box_content{
+        h3{
+            font-size: calc(1rem + .5vw);
+            strong{
+              letter-spacing: 1px;
+              text-transform: capitalize;
+            }
+        }
+        li{
+            
+            strong{
+                font-size: calc(.75rem + .5vw);
+            }
+        }
+     p{
+        font-size: calc(.75rem + .25vw);
+     }
+    }
+}

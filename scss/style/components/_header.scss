@@ -9,6 +9,9 @@ width: 100%;
     }
 
 }
+#header-container {
+    aspect-ratio: 12/4;
+}
 @media (min-width: 992px) {
     #header{
         height: calc(100vh - 90px);
@@ -24,6 +27,7 @@ width: 100%;
         box-shadow: 14px 14px 70px 0 rgba(0, 0, 0, .1);
         overflow: hidden;
     }
+
   
 }
 .marquee_animation{

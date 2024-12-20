@@ -1,14 +1,18 @@
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #fff;
+   
     height: 82px;
     position: sticky;
     top: 0;
     z-index: 1000;
- 
+    background-color: rgba(255, 255, 255, .3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    border-bottom: .0625rem solid hsla(0, 0%, 75.7%, .3);
    
     .navbar-container{
         @include flex(row, space-between, center, nowrap, 2rem);
@@ -35,15 +39,31 @@
                     text-decoration: none;
                     color: #333;
                     font-weight: 500;
-                    transition: color 0.3s ease;
+                    transition: all 0.3s ease;
 
                     &:hover {
-                        color: #ff5ce5;
+                        color: $primary;
                         text-shadow: 0 3px 6px rgba(0, 0, 0, .24);
+                        position: relative;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: -4px;
+                            left: 0;
+                            width: 0;
+                            height: 2px;
+                            background: $primary_gradient;
+                            border-radius: 4px;
+                            animation: active-link 0.4s ease-in forwards;
+                        }
                     }
-                    &:active{
-                        color: #ff5ce5;
+
+                    &.active {
+                        color: $primary;
                         text-shadow: 0 3px 6px rgba(0, 0, 0, .24);
+                        
+                        
+                  
                     }
                 }
             }
@@ -55,7 +75,12 @@
     
     }
 }
-
+@keyframes active-link {
+ 
+    to {
+        width: 100%;
+    }
+}
 .mobile-menu {
    
     position: fixed;
@@ -100,6 +125,11 @@
 
                 &:hover {
                     color: #ff5ce5;
+                    text-shadow: 0 3px 6px rgba(0, 0, 0, .24);
+                }
+
+                &.active {
+                    color: $primary;
                     text-shadow: 0 3px 6px rgba(0, 0, 0, .24);
                 }
             }

@@ -1,19 +1,23 @@
 class Navbar {
     constructor() {
+        // Get current page path
+        this.currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        
         this.template = `
             <div class="navbar">
             <div class="container navbar-container">
                 <div class="logo">
-                    <a href="#">
+                    <a href="/">
                         <img src="assets/image/png/logo.png" alt="DigiVayu">
                     </a>
                 </div>
                 <div class="nav-links d-none d-lg-flex justify-content-center align-items-center">
                     <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html" class="${this.isActive('index.html', '')}">Home</a></li>
+                        <li><a href="index.html#services" class="${this.isActive('services.html')}">Services</a></li>
+                        <li><a href="about.html" class="${this.isActive('about.html')}">About Us</a></li>
+                        
+                        <li><a href="#" class="${this.isActive('contact.html')}">Contact</a></li>
                     </ul>
                     <div>
                         <a href="#" class="btn-black">Book a Discovery Call&nbsp; <span>👉</span></a>
@@ -28,10 +32,10 @@ class Navbar {
             <!-- Mobile Menu -->
             <div class="mobile-menu">
                 <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html" class="${this.isActive('index.html', '')}">Home</a></li>
+                    <li><a href="index.html#services" class="${this.isActive('services.html')}">Services</a></li>
+                    <li><a href="about.html" class="${this.isActive('about.html')}">About</a></li>
+                        <li><a href="#" class="${this.isActive('contact.html')}">Contact</a></li>
                 </ul>
                 <div class="mobile-cta">
                     <a href="#" class="btn-black">Book a Discovery Call&nbsp; <span class="d-none d-sm-inline">👉</span></a>
@@ -39,6 +43,10 @@ class Navbar {
             </div>
             </div>
         `;
+    }
+
+    isActive(...pages) {
+        return pages.includes(this.currentPage) ? 'active' : '';
     }
 
     render(containerId) {
