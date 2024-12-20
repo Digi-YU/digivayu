@@ -93,3 +93,14 @@ span{
 .icon{
  width: fit-content;
 }
+
+.accordion-button:hover {
+    color: $black !important;
+}
+.accordion-button:not(.collapsed) {
+    color: #000 !important;
+    
+}
+.accordion-button::after {
+    display: none !important;
+}
