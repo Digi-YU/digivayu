@@ -57,7 +57,9 @@
 
             li {
                 margin-bottom: 0.75rem;
-
+                display: flex;
+               
+                gap: 1rem;
                 a {
                     color: #666;
                     text-decoration: none;

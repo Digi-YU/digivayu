@@ -34,8 +34,8 @@ class FAQ {
                             type="button" 
                             data-bs-toggle="collapse" 
                             data-bs-target="#collapse${index}">
-                              <div class="icon" id="icon-${index}"><img src="assets/image/svg/play.svg" alt="tick"></div>
-                                <div class="image col-11"> ${faq.question}</div>
+                              <div class="icon col-1" id="icon-${index}"><img src="assets/image/svg/play.svg" alt="tick"></div>
+                                <div class=" col-10"> ${faq.question}</div>
                     </button>
                 </h2>
                 <div id="collapse${index}" 

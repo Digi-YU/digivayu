@@ -75,6 +75,7 @@ class Navbar {
         gsap.set(mobileMenu, {
             yPercent: -100,
             opacity: 0,
+            scaleY: 0.75,
             visibility: 'hidden'
         });
 
@@ -83,9 +84,10 @@ class Navbar {
             .to(mobileMenu, {
                 yPercent: 0,
                 opacity: 1,
+                scaleY: 1,
                 visibility: 'visible',
                 duration: 0.5,
-                ease: 'power2.inOut'
+                ease: 'sine.inOut'
             });
 
         menuToggle.addEventListener('click', () => {

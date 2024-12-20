@@ -24,36 +24,38 @@ class Footer {
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About Us</a></li>
                                     <li><a href="index.html#services">Services</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
+                        <div class="col-lg-2 col-md-6">
                             <div class="footer-links">
                                 <h4 class="mb-4">Services</h4>
                                 <ul>
-                                    <li><a href="#">Meta Ads</a></li>
-                                    <li><a href="#">Google Ads</a></li>
-                                    <li><a href="#">LinkedIn Ads</a></li>
-                                    <li><a href="#">Web Development</a></li>
+                                    <li><a href="index.html#meta-ads">Meta Ads</a></li>
+                                    <li><a href="index.html#google-ads">Google Ads</a></li>
+                                    <li><a href="index.html#linkedin-ads">LinkedIn Ads</a></li>
+                                    <li><a href="index.html#web-development">Web Development</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
+                        <div class="col-lg-4 col-md-6">
                             <div class="footer-contact">
                                 <h4 class="mb-4">Contact Info</h4>
                                 <ul>
                                     <li>
-                                        <i class="fas fa-envelope"></i>
-                                        <a href="mailto:hello@digivayu.com">hello@digivayu.com</a>
+                                        <i class="fas fa-envelope col-1"></i>
+                                        <a href="mailto:contact@digivayu.in" class="col-10">contact@digivayu.in</a>
                                     </li>
                                     <li>
-                                        <i class="fas fa-phone"></i>
-                                        <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                        <i class="fas fa-phone col-1"></i>
+                                        <a href="tel:+919823000000" class="col-10">+91 9823000000</a>
                                     </li>
-                                    <li>
-                                        <i class="fas fa-location-dot"></i>
-                                        <a href="#">1234, Main Street, City, Country</a>
+                                    <li class="d-flex align-items-start">
+                                        <i class="fas fa-location-dot col-1"></i>
+                                        <a href="https://maps.app.goo.gl/34567890" class="col-10">
+                                            <address>Office No 63 ,6th floor, Business Bay JITO Centre, Dharma Rpd Estate, Mumbai Naka, Matoshree Nagar, Nashik, Maharashtra 422002</address>
+                                        </a>
                                     </li>
                                    
                                 </ul>
