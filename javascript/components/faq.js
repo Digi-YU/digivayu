@@ -30,11 +30,13 @@ class FAQ {
         const faqItems = this.faqs.map((faq, index) => `
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button ${index === 0 ? '' : 'collapsed'}" 
+                    <button class="accordion-button ${index === 0 ? '' : 'collapsed'} d-flex gap-3 align-items-center" 
                             type="button" 
                             data-bs-toggle="collapse" 
                             data-bs-target="#collapse${index}">
-                        ${faq.question}
+                              <div class="icon"><img src="assets/image/svg/play.svg" alt="tick"></div>
+                                <div class="image col-11"> ${faq.question}</div>
+                       
                     </button>
                 </h2>
                 <div id="collapse${index}" 
@@ -48,7 +50,7 @@ class FAQ {
         `).join('');
 
         return `
-            <div class="accordion col-lg-8 col-12" id="faqAccordion">
+            <div class="accordion col-lg-10 col-12" id="faqAccordion">
                 ${faqItems}
             </div>
         `;
@@ -58,6 +60,7 @@ class FAQ {
         const container = document.getElementById(containerId);
         if (container) {
             container.innerHTML = this.template;
+            
         }
     }
 }
