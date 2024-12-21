@@ -29,3 +29,17 @@
 height: 100%;
 }
 
+.heading-group {
+
+    margin-bottom: 2rem;
+
+    h2 {
+        span {
+            background: $primary_gradient;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+

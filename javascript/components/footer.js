@@ -3,13 +3,13 @@ class Footer {
         this.template = `
             <footer class="footer py-5">
                 <div class="container ">
-                    <div class="row g-4 col-11 col-lg-10 mx-auto">
+                    <div class="row g-4 col-11 col-lg-12 mx-auto">
                         <div class="col-lg-4 col-md-6">
                             <div class="footer-content">
                                 <div class="logo mb-4 footer-logo">
                                     <img src="assets/image/png/logo.png" alt="DigiVayu" class="img-fluid">
                                 </div>
-                                <p class="mb-4 footer-description col-12 col-lg-11">We help eCommerce DTC Inventory & Dropshipping Brands to shortcut their growth curve and become leaders in performance marketing.</p>
+                                <p class="mb-4 footer-description col-12 col-lg-11">We help businesses achieve their goals through strategic digital marketing solutions that drive growth and maximize ROI.</p>
                                 <div class="social-links d-flex gap-3">
                                     <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -21,9 +21,9 @@ class Footer {
                             <div class="footer-links">
                                 <h4 class="mb-4">Quick Links</h4>
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="home.html">Home</a></li>
                                     <li><a href="about.html">About Us</a></li>
-                                    <li><a href="index.html#services">Services</a></li>
+                                    <li><a href="home.html#services">Services</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
@@ -32,10 +32,10 @@ class Footer {
                             <div class="footer-links">
                                 <h4 class="mb-4">Services</h4>
                                 <ul>
-                                    <li><a href="index.html#meta-ads">Meta Ads</a></li>
-                                    <li><a href="index.html#google-ads">Google Ads</a></li>
-                                    <li><a href="index.html#linkedin-ads">LinkedIn Ads</a></li>
-                                    <li><a href="index.html#web-development">Web Development</a></li>
+                                    <li><a href="home.html#meta-ads">Meta Ads</a></li>
+                                    <li><a href="home.html#google-ads">Google Ads</a></li>
+                                    <li><a href="home.html#linkedin-ads">LinkedIn Ads</a></li>
+                                    <li><a href="home.html#web-development">Web Development</a></li>
                                 </ul>
                             </div>
                         </div>
