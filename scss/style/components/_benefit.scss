@@ -63,6 +63,20 @@
     border: .3125rem solid $white;
     border-radius: 1.25rem;
     box-shadow: 0 0 0 5px rgba(255, 255, 255, .3), 18px 18px 100px 0 $primary_shadow;
+    img{
+        object-fit: cover;
+        aspect-ratio: 5 / 8;
+        
+    }
+
+}
+.logo_image{
+    img{
+         
+        -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+    
+    }
 }
 .image_overlay{
     position: absolute;

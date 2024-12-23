@@ -26,6 +26,10 @@ width: 100%;
         border-radius: 1.25rem;
         box-shadow: 14px 14px 70px 0 rgba(0, 0, 0, .1);
         overflow: hidden;
+        img{
+            object-fit: cover;
+            aspect-ratio: 4 / 9;
+        }
     }
 
   
