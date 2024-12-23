@@ -3,20 +3,20 @@ import ContactForm from './contact.js';
 class Navbar {
     constructor() {
         // Get current page path
-        this.currentPage = window.location.pathname.split('/').pop() || 'home.html';
+        this.currentPage = window.location.pathname.split('/').pop() || 'index.html';
         
         this.template = `
             <div class="navbar w-100">
             <div class="container navbar-container w-100">
                 <div class="logo">
-                    <a href="home.html">
+                    <a href="index.html">
                         <img src="assets/image/png/logo.png" alt="DigiVayu">
                     </a>
                 </div>
                 <div class="nav-links d-none d-lg-flex justify-content-center align-items-center">
                     <ul>
-                        <li><a href="home.html" class="${this.isActive('home.html', '')}">Home</a></li>
-                        <li><a href="home.html#services" class="${this.isActive('services.html')}">Services</a></li>
+                        <li><a href="index.html" class="${this.isActive('index.html', '')}">Home</a></li>
+                        <li><a href="index.html#services" class="${this.isActive('services.html')}">Services</a></li>
                         <li><a href="about.html" class="${this.isActive('about.html')}">About Us</a></li>
                         
                         <li><a href="contact.html" class="${this.isActive('contact.html')}">Contact</a></li>
@@ -47,8 +47,8 @@ class Navbar {
             <!-- Mobile Menu -->
             <div class="mobile-menu">
                 <ul>
-                    <li><a href="home.html" class="${this.isActive('home.html', '')}">Home</a></li>
-                    <li><a href="home.html#services" class="${this.isActive('services.html')}">Services</a></li>
+                    <li><a href="index.html" class="${this.isActive('index.html', '')}">Home</a></li>
+                    <li><a href="index.html#services" class="${this.isActive('services.html')}">Services</a></li>
                     <li><a href="about.html" class="${this.isActive('about.html')}">About</a></li>
                     <li><a href="contact.html" class="${this.isActive('contact.html')}">Contact</a></li>
                 </ul>
