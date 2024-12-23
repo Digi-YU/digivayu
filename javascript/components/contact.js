@@ -27,7 +27,10 @@ class ContactForm {
                             <label for="message">Tell us about your business</label>
                             <textarea id="message" class="form-control" rows="4" required placeholder="e.g. We are an e-commerce business selling handmade jewelry. Looking to scale our Facebook ads and improve ROAS."></textarea>
                         </div>
-                        <button type="submit" class="btn-gradient w-100">Submit</button>
+                        <button type="submit" class="cssbuttons-io w-100">   <span
+                                               class="text-white">😎
+                                              Submit </span>
+                                            </button>
                     </form>
                 </div>
             </div>
