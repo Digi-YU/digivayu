@@ -12,7 +12,7 @@ class Footer {
                                 <p class="mb-4 footer-description col-12 col-lg-11">We help businesses achieve their goals through strategic digital marketing solutions that drive growth and maximize ROI.</p>
                                 <div class="social-links d-flex gap-3">
                                     <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com/digivayu24/?next=%2F&hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
                                     <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
