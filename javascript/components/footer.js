@@ -13,7 +13,7 @@ class Footer {
                                 <div class="social-links d-flex gap-3">
                                     <a href="https://www.facebook.com/profile.php?id=61570395294320" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                     <a href="https://www.instagram.com/digivayu24/?next=%2F&hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-                                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://wa.me/+917397979898" target="_blank"><i class="fab fa-whatsapp"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ class Footer {
                                     </li>
                                     <li>
                                         <i class="fas fa-phone col-1"></i>
-                                        <a href="tel:+919823000000" class="col-10">+91 9823000000</a>
+                                        <a href="tel:+917397979898" class="col-10">+91 7397 979 898</a>
                                     </li>
                                     <li class="d-flex align-items-start">
                                         <i class="fas fa-location-dot col-1"></i>
